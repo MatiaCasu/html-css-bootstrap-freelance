@@ -2,7 +2,7 @@ body{
   text-align: center;
 }
 .rule_debug div{
-  min-height: 100px;
+  min-height: 80px;
   border: 1px solid black;
 }
 
