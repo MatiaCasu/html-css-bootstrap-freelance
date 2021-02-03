@@ -1,0 +1,10 @@
+.rule_debug div{
+  min-height: 150px;
+  border: 1px solid black;
+}
+
+.rule_debug .jumbotron_text{
+  min-height: 350px;
+  width: 50%;
+  margin: 0 auto;
+}
