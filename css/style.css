@@ -1,18 +1,23 @@
 body{
   text-align: center;
 }
-.rule_debug div{
-  min-height: 80px;
+
+.rule_debug [class*="col-"]{
   border: 1px solid black;
+}
+
+.rule_debug .row{
+  background-color: rgb(91, 154, 237);
 }
 
 .rule_debug .box{
   height: 200px;
   width: 50%;
   margin: 20px auto;
+  background-color: rgb(255, 253, 47);
 }
 
-.box.jumbotron_nb{
-  width: 50%;
-  margin: 20px auto;
+.rule_debug .box.short{
+  height: 50px;
+  background-color: rgb(255, 50, 50);
 }
