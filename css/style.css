@@ -1,11 +1,8 @@
-body{
-  text-align: center;
-}
-
+/* elementiDEBUG */
 .rule_debug [class*="col-"]{
   border: 1px solid black;
 }
-
+/*
 .rule_debug .row{
   background-color: rgb(91, 154, 237);
 }
@@ -20,4 +17,65 @@ body{
 .rule_debug .box.short{
   height: 50px;
   background-color: rgb(255, 50, 50);
+}*/
+/* /elementiDEBUG */
+
+/* Elementi body, bg e color */
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.color_white{
+  color: #fff;
+}
+
+.bg_blue{
+  background-color:#1abc9c;
+}
+
+.bg_darkest_blue{
+  background-color: #2c3e50;
+}
+/* /Elementi body, bg e color */
+
+/* NAV */
+.box.nav > div{
+  text-transform: uppercase;
+}
+
+.nav_left{
+  font-size: 25px;
+  padding: 20px 0;
+  font-weight: 700;
+}
+
+.nav_right{
+  padding-top: 30px;
+  text-align: right;
+}
+
+.nav_right a{
+  margin-left: 20px;
+}
+
+li.burger_nav{
+  display: none;
+}
+/* /NAV */
+@media screen and (max-width: 991px) {
+  .nav_right li{
+    display: none;
+  }
+
+  li.burger_nav{
+    display: inline-block;
+    background-color: red;
+  }
 }
