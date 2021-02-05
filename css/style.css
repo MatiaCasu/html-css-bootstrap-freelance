@@ -1,4 +1,4 @@
-/*elementiDEBUG */
+/* elementiDEBUG*/
 .rule_debug [class*="col-"]{
   border: 1px solid black;
 }
@@ -8,6 +8,7 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 a{
@@ -17,37 +18,49 @@ a{
 
 .text_h3{
   font-size: 30px;
+  font-weight: 600;
+  margin: 0;
 }
 .text_h5{
   font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .color_white{
   color: #fff;
 }
 
-.color_blue200{
+.color_blue300{
   color: #2c3e50;
+}
 
+.color_blue500{
+  color: #1a252f;
 }
 .bg_blue{
   background-color:#1abc9c;
 }
 
-
-.bg_blue200{
+.bg_blue300{
   background-color: #2c3e50;
 }
+
+.bg_blue500{
+  background-color: #1a252f;
+}
+
+.btn, .btn-lg{
+  border: none;
+}
+
+.padding_h50{
+  padding: 50px 0;
+}
+
 /* /Elementi body, bg e color */
 
 /* NAV */
-section {
-  padding-top: 50px;
-}
-section [class*="col-"]:last-child{
-  padding-bottom: 50px;
-}
-
 .nav_right{
   padding-top: 10px;
   text-align: right;
@@ -71,13 +84,12 @@ li.burger_nav{
 
   li.burger_nav{
     display: inline-block;
-    background-color: #1abc9c;
   }
 }
 
 /*PORTFOLIO */
 .box_img{
-  margin: 20px 20px;
+  margin: 20px 0;
   position: relative;
 }
 
@@ -130,3 +142,11 @@ li.burger_nav{
   background-color: inherit;
 }
 /* /ABOUT */
+/* CONTACT ME */
+.form_contact > input, .form_contact > textarea{
+  border: 0;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  color: grey;
+}
+/* /CONTACT ME */
