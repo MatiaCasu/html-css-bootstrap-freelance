@@ -7,15 +7,18 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- /BOOTSTRAP -->
-    <!-- style -->
+    <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- /style -->
-    <!-- font e font awesome -->
+    <!-- /style css-->
+    <!-- google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- google font -->
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <!-- /font e font awesome -->
-    <title>BOOTSTRAP</title>
+    <!-- /font awesome -->
+    <title>Start Bootstrap</title>
   </head>
   <body>
     <header class="color_white bg_blue300 padding_h20">
@@ -53,7 +56,7 @@
       <!-- SEZIONE 1 Jumbotron #START_BOOTSTRAP -->
       <section id="start_bootstrap" class="bg_blue text-center padding_h100">
         <div class="container color_white text-uppercase">
-          <div class="row jumbo_section">
+          <div class="row">
             <div class="col-xs-4 col-xs-offset-4">
               <img class="jumbo_img" src="img/avataaars.svg" alt="illustrazione ragazzo sorridente">
             </div>
@@ -95,7 +98,7 @@
               <div class="box_img">
                 <img src="img/cabin.png" alt="ciao">
                 <div class="overlay">
-                  <p class="color_white">+</p>
+                  <p class="color_white"><i class="fas fa-plus"></i></p>
                 </div>
               </div>
             </div>
@@ -103,7 +106,7 @@
               <div class="box_img">
                 <img src="img/cake.png" alt="">
                 <div class="overlay">
-                  <p class="color_white">+</p>
+                  <p class="color_white"><i class="fas fa-plus"></i></p>
                 </div>
               </div>
             </div>
@@ -111,7 +114,7 @@
               <div class="box_img">
                 <img src="img/circus.png" alt="">
                 <div class="overlay">
-                  <p class="color_white">+</p>
+                  <p class="color_white"><i class="fas fa-plus"></i></p>
                 </div>
               </div>
             </div>
@@ -119,7 +122,7 @@
               <div class="box_img">
                 <img src="img/game.png" alt="">
                 <div class="overlay">
-                  <p class="color_white">+</p>
+                  <p class="color_white"><i class="fas fa-plus"></i></p>
                 </div>
               </div>
             </div>
@@ -127,7 +130,7 @@
               <div class="box_img">
                 <img src="img/safe.png" alt="">
                 <div class="overlay">
-                  <p class="color_white">+</p>
+                  <p class="color_white"><i class="fas fa-plus"></i></p>
                 </div>
               </div>
             </div>
@@ -135,7 +138,7 @@
               <div class="box_img">
                 <img src="img/submarine.png" alt="">
                 <div class="overlay">
-                  <p class="color_white">+</p>
+                  <p class="color_white"><i class="fas fa-plus"></i></p>
                 </div>
               </div>
             </div>
@@ -185,7 +188,7 @@
           <div class="row">
             <!-- TITOLO e INTERLINEA-->
             <div class="col-xs-12">
-              <h3 class="text-uppercase color_blue300">
+              <h3 class="text-center color_blue300">
                 contact me
               </h3>
             </div>
@@ -208,7 +211,7 @@
                 <div class="form_contact">
                   <input type="tel" placeholder="Phone number" class="padding_h20">
                 </div>
-                <div class="form_contact" class="padding_h20">
+                <div class="form_contact padding_h20">
                   <textarea name="message" rows="5" cols="50">Message</textarea>
                 </div>
               </form>
@@ -228,8 +231,8 @@
     <footer class="color_white text-center">
       <div class="bg_blue300 padding_h50">
         <div class="container">
-          <div class="row">
-            <!-- 3 COLONNE con TESTO e LINK FOOTER -->
+          <div class="row footer_text">
+            <!-- /COLONNA 1 -->
             <div class="col-xs-12 col-md-4">
               <h5>location</h5>
               <address class="text-capitalize">
@@ -237,6 +240,8 @@
                 Clark, MO 65243<br>
               </address>
             </div>
+            <!-- /COLONNA 1 -->
+            <!-- COLONNA 2 -->
             <div class="col-xs-12 col-md-4">
               <div class="footer_link">
                 <h5>around the web</h5>
@@ -256,22 +261,25 @@
                 </ul>
               </div>
             </div>
+            <!-- /COLONNA 2 -->
+            <!-- COLONNA 3 -->
             <div class="col-xs-12 col-md-4">
               <h5>location</h5>
-              <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <span><a href="#">Start Bootstrap</a></span></p>
+              <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <span class="color_blue start_bootstrap_link"><a href="#">Start Bootstrap</a></span></p>
             </div>
-            <!-- /3 COLONNE con TESTO e LINK FOOTER -->
+            <!-- /COLONNA 3 -->
           </div>
         </div>
       </div>
       <!-- /FOOTER -->
       <!-- Linea Copyright -->
-      <div class="bg_blue500">
+      <div class="bg_blue500 padding_h20">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <p><small>Copyright © Your Website 2020</small></p>
+              <p class="footer_copyright"><small>Copyright © Your Website 2020</small></p>
             </div>
+          </div>
         </div>
       </div>
       <!-- /Linea Footer Copyright -->
