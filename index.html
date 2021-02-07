@@ -17,50 +17,48 @@
     <!-- /font e font awesome -->
     <title>BOOTSTRAP</title>
   </head>
-  <body class="">
-    <header class="color_white text-uppercase">
+  <body>
+    <header class="color_white bg_blue300 padding_h20">
       <!-- NAV e LOGO-->
-      <div class="bg_blue300 padding_h20">
         <div class="container">
-          <nav class="row">
-            <div class="col-xs-8 col-sm-6 box nav">
+          <div class="row">
+            <nav class="col-xs-12 clearfix">
               <div class="nav_left">
-                <h5 class="text_h5">
-                  Start bootstrap
-                </h5>
+                <a href="#start_bootstrap">
+                  <h4>Start bootstrap</h4>
+                </a>
               </div>
-            </div>
-            <div class="col-xs-4 col-sm-6 box nav">
-              <div class="nav_right">
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <a href="#">portfolio</a>
+              <div class="nav_right text-right">
+                <ul class="list_inline">
+                  <li>
+                    <a href="#portfolio">portfolio</a>
                   </li>
-                  <li class="list-inline-item">
-                    <a href="#">about</a>
+                  <li>
+                    <a href="#about">about</a>
                   </li>
-                  <li class="list-inline-item">
-                    <a href="#">contact</a>
-                  </li>
-                  <li class="burger_nav btn-lg bg_blue">
-                    <h6>menu <i class="fas fa-bars"></i></h6>
+                  <li>
+                    <a href="#contact">contact</a>
                   </li>
                 </ul>
+                <button type="button" name="menu" class="button_menu bg_blue text-uppercase">
+                  menu <i class="fas fa-bars"></i>
+                </button>
               </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
-      </div>
       <!-- /NAV e LOGO-->
-      <!-- JUMBO -->
-      <section class="bg_blue text-center padding_h50">
-        <div class="container">
+    </header>
+    <main>
+      <!-- SEZIONE 1 Jumbotron #START_BOOTSTRAP -->
+      <section id="start_bootstrap" class="bg_blue text-center padding_h100">
+        <div class="container color_white text-uppercase">
           <div class="row jumbo_section">
             <div class="col-xs-4 col-xs-offset-4">
-              <img class="jumbo_img" src="img/avataaars.svg" alt="">
+              <img class="jumbo_img" src="img/avataaars.svg" alt="illustrazione ragazzo sorridente">
             </div>
             <div class="col-xs-12">
-              <h3 class="up_big text_big">Start Bootstrap</h3>
+              <h2 class="up_big text_big">Start Bootstrap</h2>
             </div>
             <div class="col-xs-12">
               <div class="star_interline bg_white">
@@ -68,23 +66,21 @@
               </div>
             </div>
             <div class="col-xs-12">
-              <div class="jumbo_artist text-capitalize">
+              <p class="jumbo_artist text-capitalize">
                 Graphic Artist - Web Designer - Illustrator
-              </div>
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- /JUMBO -->
-    </header>
-    <main>
-      <!-- SEZIONE 1 PORTFOLIO -->
-      <section class="padding_h50">
+      <!-- /SEZIONE 1 Jumbotron #START_BOOTSTRAP -->
+      <!-- SEZIONE 2 PORTFOLIO -->
+      <section id="portfolio" class="padding_h100">
         <div class="container text-center">
           <div class="row">
             <!-- TITOLO e INTERLINEA-->
             <div class="col-xs-12">
-              <h3 class="text-uppercase text_h3 color_blue300">
+              <h3 class="text-uppercase color_blue300">
                 portfolio
               </h3>
             </div>
@@ -147,15 +143,15 @@
           </div>
         </div>
       </section>
-      <!-- /SEZIONE 1 PORTFOLIO-->
-      <!-- SEZIONE 2 ABOUT-->
-      <section class="color_white text-center text-uppercase">
-        <div class="bg_blue  padding_h50">
-          <div class="container" id="about">
+      <!-- /SEZIONE 2 PORTFOLIO-->
+      <!-- SEZIONE 3 ABOUT-->
+      <section id="about" class="color_white text-center text-uppercase">
+        <div class="bg_blue  padding_h100">
+          <div class="container">
             <div class="row">
               <!-- TITOLO e INTERLINEA-->
               <div class="col-xs-12">
-                <h3 class="text_h3">
+                <h3>
                   ABOUT
                 </h3>
               </div>
@@ -175,21 +171,21 @@
               <!-- /colonna CONTAINER TESTO-->
               <!-- BOTTONE -->
               <div class="col-xs-12">
-                <button type="button" class="btn btn-lg">Free download!</button>
+                <button type="button" class="btn btn-lg"><i class="fas fa-download"></i>free download!</button>
               </div>
               <!-- /BOTTONE -->
             </div>
           </div>
         </div>
       </section>
-      <!-- /SEZIONE 2 ABOUT-->
-      <!-- SEZIONE 3 CONTACT ME -->
-      <section class="padding_h50">
-        <div class="container text-center">
+      <!-- /SEZIONE 3 ABOUT-->
+      <!-- SEZIONE 4 CONTACT ME -->
+      <section id="contact" class="padding_h100">
+        <div class="container">
           <div class="row">
             <!-- TITOLO e INTERLINEA-->
             <div class="col-xs-12">
-              <h3 class="text-uppercase text_h3 color_blue300">
+              <h3 class="text-uppercase color_blue300">
                 contact me
               </h3>
             </div>
@@ -215,18 +211,18 @@
                 <div class="form_contact" class="padding_h20">
                   <textarea name="message" rows="5" cols="50">Message</textarea>
                 </div>
-              </form
+              </form>
             </div>
             <!-- /colonna CONTAINER FORM-->
             <!-- BOTTONE -->
-            <div class="col-xs-12 text-left">
-              <button type="button" class="btn-lg bg_blue color_white padding_h20">SEND</button>
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <button type="button" class="btn btn-lg bg_blue color_white">send</button>
             </div>
             <!-- /BOTTONE -->
           </div>
         </div>
       </section>
-      <!-- /SEZIONE 3 CONTACT ME -->
+      <!-- /SEZIONE 4 CONTACT ME -->
     </main>
     <!-- FOOTER -->
     <footer class="color_white text-center">
@@ -235,7 +231,7 @@
           <div class="row">
             <!-- 3 COLONNE con TESTO e LINK FOOTER -->
             <div class="col-xs-12 col-md-4">
-              <h5  class="text_h5">location</h5>
+              <h5>location</h5>
               <address class="text-capitalize">
                 2215 John Daniel Drive0<br>
                 Clark, MO 65243<br>
@@ -243,25 +239,25 @@
             </div>
             <div class="col-xs-12 col-md-4">
               <div class="footer_link">
-                <h5 class="text_h5">around the web</h5>
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <a href="#"><i class="fab fa-facebook-f"></i>                    </a>
+                <h5>around the web</h5>
+                <ul class="list_inline">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                   </li>
-                  <li class="list-inline-item">
+                  <li>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                   </li>
-                  <li class="list-inline-item">
+                  <li>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                   </li>
-                  <li class="list-inline-item">
+                  <li>
                     <a href="#"><i class="fab fa-dribbble"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-xs-12 col-md-4">
-              <h5 class="text_h5">location</h5>
+              <h5>location</h5>
               <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <span><a href="#">Start Bootstrap</a></span></p>
             </div>
             <!-- /3 COLONNE con TESTO e LINK FOOTER -->

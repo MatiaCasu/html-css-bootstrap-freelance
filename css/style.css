@@ -1,33 +1,46 @@
-/*elementiDEBUG*/
-.rule_debug [class*="col-"]{
-  border: 1px solid black;
-}
-
-/* Elementi body, bg e color */
-body{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
+/* Html e Body */
+html{
   scroll-behavior: smooth;
 }
 
-a{
-  text-decoration: none;
-  color: inherit;
+/* CLEARFIX */
+.clearfix:hover{
+  display: block;
+  content: "";
+  clear: both;
 }
 
-.text_h3{
-  font-size: 30px;
-  font-weight: 600;
+/* Typography */
+p, button, address{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h2, h3, h4, h5, .button_menu{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+  font-size: 45px;
+}
+
+h3{
+  font-size: 35px;
   margin: 0;
 }
 
-.text_h5{
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
+h4{
+  font-size: 25px;
 }
 
+h5{
+  font-size: 20px;
+}
+
+/* FONT COLOR */
 .color_white{
   color: #fff;
 }
@@ -39,7 +52,9 @@ a{
 .color_blue500{
   color: #1a252f;
 }
+/* /FONT COLOR */
 
+/* BACKGROUND COLOR */
 .bg_blue{
   background-color:#1abc9c;
 }
@@ -51,46 +66,90 @@ a{
 .bg_blue500{
   background-color: #1a252f;
 }
+/* /BACKGROUND COLOR */
 
-.btn, .btn-lg{
-  border: none;
-  min-width: 150px;
-}
-
+/* PADDING */
 .padding_h20{
   padding: 20px 0;
 }
 
-.padding_h50{
-  padding: 50px 0;
+.padding_h100{
+  padding: 100px 0;
+}
+/* /PADDING */
+
+/* mix */
+.list_inline > li{
+  display: inline-block;
+  margin-right: 20px;
 }
 
-/* /Elementi body, bg e color */
+ul.list_inline{
+  padding: 0;
+}
+
+a{
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+}
+/* mix */
 
 /* NAV */
-.nav_right{
-  padding-top: 10px;
-  text-align: right;
+header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.nav_right a{
-  margin-left: 20px;
+.nav_left, .nav_right{
+  float: left;
+  min-width: 50%;
 }
 
-li.burger_nav{
+.nav_right ul{
+  margin-top: 12px;
+}
+
+.nav_right a:hover{
+  color: #1abc9c;
+}
+
+.button_menu{
   display: none;
+  padding: 12px 20px;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 991px) {
-  .nav_right li{
-    display: none;
-  }
-  .nav_right{
-    padding-top: 10px;
+  .nav_left h4{
+    font-size: 20px;
   }
 
-  li.burger_nav{
+  .nav_right ul{
+    display: none;
+  }
+
+  .button_menu{
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .nav_right{
+    text-align: left;
   }
 }
 /* /NAV */
@@ -99,15 +158,14 @@ li.burger_nav{
 .box_img{
   margin-bottom: 30px;
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .box_img > img{
   width: 100%;
   display: block;
-}
-
-.overlay, .box_img img{
-  border-radius: 10px;
 }
 
 .overlay{
@@ -134,16 +192,10 @@ li.burger_nav{
 /* /PORTFOLIO */
 
 /* ABOUT */
-
 .text_about > p{
   width: calc( 50% - 20px);
   float: left;
   margin-right: 20px;
-}
-
-#about .btn-lg{
-  border: 1px solid white;
-  background-color: inherit;
 }
 
 @media screen and (max-width: 991px) {
@@ -151,6 +203,11 @@ li.burger_nav{
     width: 100%;
     float: left;
   }
+}
+/* /text ABOUT */
+#about .btn-lg{
+  border: 1px solid white;
+  background-color: inherit;
 }
 /* /ABOUT */
 
@@ -166,15 +223,17 @@ li.burger_nav{
 
 /* footer link */
 .footer_link li{
-  padding: 2% 5%;
   border: 1px solid white;
   border-radius: 50%;
-  margin-left: 15px;
   font-size: 20px;
 }
 /*/ footer link */
 
 /* interlinea stella */
+.star_interline{
+  text-align: center;
+}
+
 .star_interline i{
   display: inline-block;
   padding: 30px 10px;
@@ -190,6 +249,7 @@ li.burger_nav{
   vertical-align: super;
   border-radius: 20px;
 }
+
 .star_interline.bg_white::before,
 .star_interline.bg_white::after{
   background-color: white;
